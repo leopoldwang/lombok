@@ -16,6 +16,7 @@ jobs:
     - name: Build with Ant
       run: ant
     - name: Upload artifacts
+      uses: actions/upload-artifact@master
       with:
         name: lombok-artifact
         path: /home/runner/work/lombok/lombok/dist
